@@ -221,9 +221,17 @@
     max-width:360px;
   }
   .timeline::before{
-    content:'';position:absolute;left:50%;top:30px;bottom:30px;
-    border-left:1.5px dashed var(--sage);opacity:.6;
-    transform:translateX(-.5px);
+    content:'';
+    position:absolute;
+    left:50%;
+    top:30px;
+    bottom:30px;
+    width:1.5px;
+    transform:translateX(-.75px);
+    background-image:linear-gradient(to bottom, var(--sage) 50%, transparent 0);
+    background-size:1.5px 8px;
+    background-repeat:repeat-y;
+    opacity:.55;
   }
   .stop{
     display:grid;
